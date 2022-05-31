@@ -1,0 +1,8 @@
+Pegar el archivo .desktop en la ruta de la raspberry: nano /etc/xdg/autostart/displayDev.desktop
+Ver si no es necesario algo extra para que se ejecute steamlink de la manera en la que lo estoy haciendo en el sh
+
+Para descargar steamlink usar el comando debajo:
+curl -O http://media.steampowered.com/steamlink/rpi/steamlink_1.0.4_armhf.deb
+
+y después:
+sudo dpkg -i steamlink_1.0.4_armhf.deb

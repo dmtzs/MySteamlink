@@ -9,11 +9,6 @@ API_TOKEN = ""
 bot = telebot.TeleBot(API_TOKEN)
 
 # @bot.message_handler(commands=['help', 'start'])
-@bot.message_handler(commands=["help"])
-def send_welcome(message):
-    message_to_send = ""
-    bot.reply_to(message, message_to_send)
-
 @bot.message_handler(commands=["shutdownrasp"])
 def reboot_rasp(message):
     message_to_send = "Reiniciando raspberry"
